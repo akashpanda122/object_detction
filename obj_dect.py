@@ -1,29 +1,3 @@
-# This program uses Tensorflow and OpenCV to detect objects in the video
-# captured from your webcam. This program is meant to be used with machine
-# learning models generated with Teachable Machine.
-#
-# For this project, you will be generating a image object detection model. Go
-# to the website, click "Get Started" then go to "Image Project". Follow the
-# steps to create a model. Export the model as a "Tensorflow->Keras" model.
-#
-# To run this code in your environment, you will need to:
-#   * Install Python 3 & library dependencies
-#       * Follow instructions for your setup
-#   * Export your teachable machine tensorflow keras model and unzip it.
-#       * You need both the .h5 file and labels.txt
-#   * Update model_path to point to location of your keras model
-#   * Update labels_path to point to location of your labels.txt
-#   * Adjust width and height of your webcam for your system
-#       * Adjust frameWidth with your video feed width in pixels
-#       * Adjust frameHeight with your video feed height in pixels
-#   * Set your confidence threshold
-#       * conf_threshold by default is 90
-#   * If video does not show up properly, use the matplotlib implementation
-#       * Uncomment "import matplotlib...."
-#       * Comment out "cv2.imshow" and "cv2.waitKey" lines
-#       * Uncomment plt lines of code below
-#   * Run "python3 tm_obj_det.py"
-
 import multiprocessing
 import numpy as np
 import cv2
